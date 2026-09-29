@@ -84,6 +84,76 @@ section h3 {
   font-weight: bold;
 }
 
+  .participants-section {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #e3e8ed;
+  }
+
+  .participants-section h5 {
+    margin-bottom: 8px;
+    color: #344054;
+    font-size: 0.9rem;
+  }
+
+  .participant-list {
+    padding: 0;
+    list-style: none;
+    color: #475467;
+  }
+
+  .participant-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 4px 0;
+    border-bottom: 1px solid #eef0f2;
+  }
+
+  .participant-item:last-child {
+    border-bottom: 0;
+  }
+
+  .participant-email {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .remove-participant-button {
+    display: inline-grid;
+    flex: 0 0 30px;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: #b42318;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .remove-participant-button:hover:not(:disabled) {
+    background: #fee4e2;
+    color: #912018;
+  }
+
+  .remove-participant-button:focus-visible {
+    outline: 2px solid #b42318;
+    outline-offset: 2px;
+  }
+
+  .remove-participant-button:disabled {
+    cursor: wait;
+    opacity: 0.55;
+  }
+
+  .no-participants {
+    color: #667085;
+    font-style: italic;
+  }
+
 .form-group input,
 .form-group select {
   width: 100%;
